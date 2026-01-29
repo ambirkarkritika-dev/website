@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .A {
+            background: black;
+            padding: 0 278px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            display: block;
+        }
+       
+        .menu {
+            list-style: none;
+            display: flex;
+            
+        }
+        .menu > li {
+            position: relative;
+        }
+        .menu > li > a {
+            display: block;
+            padding: 17px 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu > li > a:hover {
+           
+            color: #777;
+        }
+       .b {
+        display: block;
+        position: absolute;
+        right: 300px;
+        top: 0;
+        text-decoration: underline;
+        font-weight: 1000;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+       }
+.team-section {
+    padding: 60px 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(18px);
+    position: relative;
+    animation: sectionIn .8s cubic-bezier(.2,.9,.2,1) forwards;
+    animation-delay: .12s;
+}
+
+.team-section h1 {
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fadeInUp .8s ease forwards;
+    animation-delay: .35s;
+}
+
+.team-card {
+    width: 300px;
+    opacity: 0;
+    transform: translateY(18px) scale(.98);
+    animation: cardIn .6s ease forwards;
+    animation-delay: var(--d, 0s);
+}
+
+.team-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transform-origin: center;
+    animation: imgZoom 14s ease-in-out infinite alternate;
+    animation-name: imgZoom, imgColor;
+    animation-duration: 14s, .6s;
+    animation-delay: 0s, var(--d, 0s);
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: both;
+}
+
+.team-card h3 {
+    margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.role {
+    color: #7ED321;
+    font-weight: bold;
+    margin: 10px 0 15px;
+    text-transform: lowercase;
+}
+
+.desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+#pqr {
+  background: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pqr-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.pqr h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pqr p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+nav.A{ animation: slideDown .6s ease-out }
+.team-section h1{ opacity:0; transform:translateY(-12px); animation:fadeInDown .8s ease forwards .18s }
+
+@keyframes imgZoom{ 0%{ transform:scale(1) } 100%{ transform:scale(1.04) } }
+@keyframes imgColor{ to{ filter:grayscale(0%) } }
+@keyframes cardIn{ to{ opacity:1; transform:translateY(0) scale(1) } }
+@keyframes sectionIn{ to{ opacity:1; transform:translateY(0) } }
+@keyframes fadeInUp{ to{ opacity:1; transform:translateY(0) } }
+@keyframes fadeInDown{ to{ opacity:1; transform:translateY(0) } }
+@keyframes slideDown{ from{ transform:translateY(-14px); opacity:0 } to{ transform:none; opacity:1 } }
+    </style>
+</head>
+<body>
+     <nav class="A">
+        <ul class="menu">
+            <li class="b"><a href="#">Business</a></li>
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="work.html">WORK</a></li>
+            
+            <li><a href="#pqr">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="team-section">
+    <h1>Meet The Team</h1>
+
+    <div class="team-container">
+
+        <div class="team-card" style="--d:.4s">
+            <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\img.jpg" alt="Mary Brown">
+            <h3>MARY BROWN</h3>
+            <p class="role">creative leader</p>
+            <p class="desc">
+                Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis.
+            </p>
+        </div>
+
+        <div class="team-card" style="--d:.6s">
+            <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\img.jpg" alt="Ann Richmond">
+            <h3>ANN RICHMOND</h3>
+            <p class="role">creative leader</p>
+            <p class="desc">
+                Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis.
+            </p>
+        </div>
+
+        <div class="team-card" style="--d:.8s">
+            <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\img.jpg" alt="Chung Schlueter">
+            <h3>CHUNG SCHLUETER</h3>
+            <p class="role">strategy director</p>
+            <p class="desc">
+                Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis.
+            </p>
+        </div>
+
+    </div>
+</section>
+<section id="pqr" style="--d:1s">
+  <div class="pqr-content">
+    <p>
+      Today is the day to build the business of your dreams.
+      Share your mission with the world — and blow your customers away.
+    </p>
+    <br>
+    <br>
+    <p>Contact us: (918) 245-9457<br>
+       1104 E 8th St <br>
+       Sand Springs, Oklahoma(OK), 74063  </p>
+  </div>
+</section>
+</body>
+</html>
