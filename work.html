@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                 *{
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        font-family: Arial, Helvetica, sans-serif;
+                }
+                body{ background:#fff; color:#111 }
+                .A {
+                        background: black;
+                        padding: 0 278px;
+                        position: sticky;
+                        top: 0;
+                        overflow: hidden;
+                        display: block;
+                }
+       
+                .menu {
+                        list-style: none;
+                        display: flex;
+                }
+                .menu > li { position: relative }
+                .menu > li > a {
+                        display: block;
+                        padding: 17px 25px;
+                        color: white;
+                        text-decoration: none;
+                        font-weight: 500;
+                }
+                .menu > li > a:hover { color: #ddd }
+             .b { display:block; position:absolute; right:300px; top:0; text-decoration:underline; font-weight:1000; font-size:x-large; font-family:'Times New Roman', Times, serif }
+
+               
+                .hero{
+                    height: 420px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    text-align:center;
+                    background:black;
+                    color: #fff;
+                    position:relative;
+                    overflow:hidden;
+                }
+                .hero h1{ font-size:44px; letter-spacing:1px }
+                .hero p{ margin-top:12px; color:#cbd5e1 }
+
+                .container{ max-width:1100px; margin:40px auto; padding:0 20px }
+
+               
+                .projects{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:26px }
+                .card{ background:#fff; border-radius:8px; padding:18px; box-shadow:0 10px 30px rgba(2,6,23,0.06); text-align:center; transform-origin:center; transition:transform .28s ease, box-shadow .28s ease; opacity:0; transform:translateY(18px) scale(.99); animation:cardIn .6s ease forwards; animation-delay: var(--d,0s) }
+                .card:hover{ transform:translateY(-6px) scale(1.02); box-shadow:0 24px 48px rgba(2,6,23,0.14) }
+                .card img{ width:100%; height:160px; object-fit:cover; border-radius:6px }
+                .card h3{ margin-top:12px; font-size:18px }
+                .card p{ color:#555; font-size:14px; line-height:1.6 }
+
+                #pqr {
+  background: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pqr-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.pqr h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pqr p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+
+                
+                nav.A{ animation: slideDown .6s ease-out }
+                .hero{ animation: heroIn .9s cubic-bezier(.2,.9,.2,1) forwards }
+                .hero h1{ opacity:0; transform:translateY(-12px); animation:fadeInDown .8s ease forwards .18s }
+                .hero p{ opacity:0; transform:translateY(12px); animation:fadeInUp .8s ease forwards .4s }
+
+                @keyframes cardIn{ to{ opacity:1; transform:translateY(0) scale(1) } }
+                @keyframes heroIn{ from{ opacity:0; transform:translateY(8px) } to{ opacity:1; transform:none } }
+                @keyframes fadeInDown{ to{ opacity:1; transform:translateY(0) } }
+                @keyframes fadeInUp{ to{ opacity:1; transform:translateY(0) } }
+                @keyframes slideDown{ from{ transform:translateY(-14px); opacity:0 } to{ transform:none; opacity:1 } }
+
+                
+                .hero::after{ content:""; position:absolute; right:-80px; bottom:-40px; width:360px; height:360px; background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0)); border-radius:50%; filter:blur(18px); animation:float 6s ease-in-out infinite }
+                @keyframes float{ 0%{ transform:translateY(0) } 50%{ transform:translateY(-12px) } 100%{ transform:translateY(0) } }
+    </style>
+</head>
+<body>
+    <nav class="A">
+        <ul class="menu">
+            <li class="b"><a href="#">Business</a></li>
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="work.html">WORK</a></li>
+            
+            <li><a href="#pqr">CONTACT</a></li>
+        </ul>
+    </nav>
+        <header class="hero">
+            <div>
+                <h1>Our Work — Case Studies & Projects</h1>
+                <p>Selected projects that showcase our design, strategy, and development work.</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="projects" aria-label="Projects">
+                <article class="card" style="--d:.2s">
+                    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\695286bff9bd42d9cf8c7af0_placeholder 3 (1).svg" alt="Project 1">
+                    <h3>Brand Refresh</h3>
+                    <p>Complete rebrand and new homepage experience for a growing startup.</p>
+                </article>
+
+                <article class="card" style="--d:.35s">
+                    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\695286bff9bd42d9cf8c7af2_placeholder 1.svg" alt="Project 2">
+                    <h3>Product Landing</h3>
+                    <p>High-conversion landing page optimized for acquisition and retention.</p>
+                </article>
+
+                <article class="card" style="--d:.5s">
+                    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\img.jpg" alt="Project 3">
+                    <h3>Campaign Design</h3>
+                    <p>Multichannel campaign assets and visual system for a product launch.</p>
+                </article>
+
+                <article class="card" style="--d:.65s">
+                    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\about.jpg" alt="Project 4">
+                    <h3>UX Audit</h3>
+                    <p>Actionable UX recommendations and prototype improvements for conversion.</p>
+                </article>
+            </section>
+        </main>
+
+       <section id="pqr" style="--d:1s">
+  <div class="pqr-content">
+    <p>
+      Today is the day to build the business of your dreams.
+      Share your mission with the world — and blow your customers away.
+    </p>
+    <br>
+    <br>
+    <p>Contact us: (918) 245-9457<br>
+       1104 E 8th St <br>
+       Sand Springs, Oklahoma(OK), 74063  </p>
+  </div>
+</section>
+</body>
+</html>
