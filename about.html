@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body{ background-color: #000; color: #fff }
+        .A {
+            background: black;
+            padding: 0 278px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            display: block;
+        }
+       
+        .menu {
+            list-style: none;
+            display: flex;
+            
+        }
+        .menu > li {
+            position: relative;
+        }
+        .menu > li > a {
+            display: block;
+            padding: 17px 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu > li > a:hover {
+           
+            color: #777;
+        }
+        .b {
+        display: block;
+        position: absolute;
+        right: 300px;
+        top: 0;
+        text-decoration: underline;
+        font-weight: 1000;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+       }
+    .about-section {
+      display: flex;
+      max-width: 1000px;
+      margin: 100px auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      animation: navFade 800ms ease-out both;
+      opacity: 0; transform: translateY(18px);
+      }
+      @keyframes navFade { from { transform: translateY(-10px); opacity: 0 } to { transform: none; opacity: 1 } }
+
+.about-left {
+  background: #000;
+  color: #fff;
+  padding: 50px;
+  width: 50%;
+}
+
+.about-left small {
+  color: #ff5a1f;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.about-left h2 {
+  color: #ff5a1f;
+  margin: 15px 0;
+  font-size: 28px;
+}
+
+.about-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+.about-right {
+  width: 50%;
+}
+
+.about-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#pqr {
+  background: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pqr-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.pqr h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pqr p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+nav.A{ animation: slideDown .6s ease-out }
+.about-right img{ transform-origin:center; animation: bgZoom 18s ease-in-out infinite alternate }
+.about-left h2{ opacity:0; transform:translateY(-12px); animation:fadeInDown .9s ease forwards .3s }
+.about-left p{ opacity:0; transform:translateY(12px); animation:fadeInUp .9s ease forwards .6s }
+.about-right{ opacity:0; transform:translateX(18px); animation:fadeInRight .9s ease forwards .9s }
+.about-section{ animation: sectionIn .8s cubic-bezier(.2,.9,.2,1) forwards; animation-delay: .15s }
+.about-section::after{ content:""; position:absolute; left:6%; top:6%; width:100px; height:100px; background:rgba(255,255,255,0.04); border-radius:50%; filter:blur(10px); animation:float 6s ease-in-out infinite }
+
+@keyframes bgZoom{ 0%{ transform:scale(1) } 100%{ transform:scale(1.06) } }
+@keyframes fadeInDown{ to{ opacity:1; transform:translateY(0) } }
+@keyframes fadeInUp{ to{ opacity:1; transform:translateY(0) } }
+@keyframes fadeInRight{ to{ opacity:1; transform:translateX(0) } }
+@keyframes sectionIn{ to{ opacity:1; transform:translateY(0) } }
+@keyframes float{ 0%{ transform:translateY(0) } 50%{ transform:translateY(-10px) } 100%{ transform:translateY(0) } }
+@keyframes slideDown{ from{ transform:translateY(-14px); opacity:0 } to{ transform:none; opacity:1 } }
+
+    </style>
+</head>
+<body>
+    <nav class="A">
+        <ul class="menu">
+            <li class="b"><a href="#">Business</a></li>
+             <li><a href="website.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="work.html">WORK</a></li>
+          
+            <li><a href="#pqr">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="about-section">
+  <div class="about-left">
+
+    <h2>Who we are</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur elit sed do.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed diam nonumy nibh euismod.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed diam nonumy nibh euismod. Facilisis lorem at vero eros
+      et accumsan et justo odio dignissim qui blandit.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed diam nonumy nibh euismod.
+    </p>
+  </div>
+
+  <div class="about-right">
+    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\about.jpg" alt=" Image">
+  </div>
+</section>
+<section id="pqr" style="--d:1s">
+  <div class="pqr-content">
+    <p>
+      Today is the day to build the business of your dreams.
+      Share your mission with the world — and blow your customers away.
+    </p>
+    <br>
+    <br>
+    <p>Contact us: (918) 245-9457<br>
+       1104 E 8th St <br>
+       Sand Springs, Oklahoma(OK), 74063  </p>
+  </div>
+</section>
+</body>
+</html>
