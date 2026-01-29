@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Your Business</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+        .A {
+            background: black;
+            padding: 0 278px;
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            display: block;
+        }
+       
+        .menu {
+            list-style: none;
+            display: flex;
+            
+        }
+        .menu > li {
+            position: relative;
+        }
+        .menu > li > a {
+            display: block;
+            padding: 17px 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu > li > a:hover {
+           
+            color: #777;
+        }
+       .b {
+        display: block;
+        position: absolute;
+        right: 300px;
+        top: 0;
+        text-decoration: underline;
+        font-weight: 1000;
+        font-size: x-large;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       
+       .img {
+        border-radius: 5px;
+        position: relative;
+        text-align: center;
+       }
+       h1 {
+        position: absolute;
+        top:20%;
+        left: 20%;
+        right: 20%;
+        color: white;
+        font-size: 70px
+       }
+       .s {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        right: 10%;
+        color: white;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+       }
+       h4 {
+        text-align: center;
+        color: #1f2937;
+       }
+       h2 {
+        text-align: center;
+        font-size: 40px;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        font-weight: 100;
+       }
+       #about-section {
+  padding: 80px 60px;
+  background: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.about-text {
+  width: 45%;
+}
+.about-label {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: black;
+  margin-bottom: 10px;
+}
+.about-text p {
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background: #333;
+}
+.about-image {
+  width: 50%;
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+      #team {
+  padding: 80px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.image-box {
+  flex: 1;
+}
+.image-box img {
+  width: 100%;
+  display: block;
+}
+.content-box {
+  flex: 1;
+}
+
+.small-title {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.content-box p {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 14px;
+} 
+#work-section {
+  padding: 80px 60px;
+  background: #ffffff;
+}
+
+.work-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.work-text {
+  width: 45%;
+}
+.work-label {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: black ;
+  margin-bottom: 10px;
+}
+.work-text p {
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.btn:hover {
+  background: #333;
+}
+.work-image {
+  width: 50%;
+}
+.work-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#pqr {
+  background: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.pqr-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.pqr h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.pqr p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+  
+     
+       nav.A{
+         animation: slideDown .6s ease-out;
+       }
+
+       .img img{
+         display:block;
+         width:100%;
+         height:auto;
+         object-fit:cover;
+         transform-origin:center;
+         animation: bgZoom 18s ease-in-out infinite alternate;
+       }
+
+       h1{opacity:0; transform:translateY(-12px); animation:fadeInDown .9s ease forwards .4s}
+       .s{opacity:0; transform:translateY(12px); animation:fadeInUp .9s ease forwards .8s}
+
+       
+       section{opacity:0; transform:translateY(18px); animation:sectionIn .8s cubic-bezier(.2,.9,.2,1) forwards; animation-delay: var(--d,0s)}
+
+       
+       .img::after{
+         content:"";
+         position:absolute;
+         left:8%;
+         top:8%;
+         width:120px;
+         height:120px;
+         background:rgba(255,255,255,0.06);
+         border-radius:50%;
+         filter:blur(12px);
+         animation:float 6s ease-in-out infinite;
+       }
+
+       @keyframes bgZoom{
+         0%{transform:scale(1)}
+         100%{transform:scale(1.06)}
+       }
+
+       @keyframes fadeInDown{
+         to{opacity:1; transform:translateY(0)}
+       }
+       @keyframes fadeInUp{
+         to{opacity:1; transform:translateY(0)}
+       }
+       @keyframes sectionIn{
+         to{opacity:1; transform:translateY(0)}
+       }
+       @keyframes float{
+         0%{transform:translateY(0)}
+         50%{transform:translateY(-10px)}
+         100%{transform:translateY(0)}
+       }
+       @keyframes slideDown{
+         from{transform:translateY(-14px); opacity:0}
+         to{transform:none; opacity:1}
+       }
+
+       
+    </style>
+</head>
+<body>
+    <nav class="A">
+        <ul class="menu">
+            <li class="b"><a href="#">Business</a></li>
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            
+            <li><a href="team.html">TEAM</a></li>
+            <li><a href="work.html">WORK</a></li>
+            
+            <li><a href="#pqr">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="img">
+    <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\background.jpg" height="100%" width="100%" >
+    <h1>Grow Your Business</h1>
+     <p class="s">Give your business a boost with a beautifully crafted homepage.</p>
+</div>
+<br>
+<br>
+<h4>WHAT WE BELIVE IN</h4>
+<h2>Grow your business, establish your brand, and put your customers first.</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="about-section" style="--d:0.4s">
+  <div class="about-container">
+    <div class="about-text">
+      <p class="about-label">ABOUT</p>
+      <p>
+        Nulla vel sodales tellus, quis condimentum enim. 
+        Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, 
+        non accumsan leo. Aliquam erat volutpat.
+      </p>
+      <p>
+        Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
+      </p>
+      <button class="btn">LEARN MORE</button>
+    </div>
+    <div class="about-image">
+      <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\695286bff9bd42d9cf8c7af0_placeholder 3 (1).svg" alt="About Image">
+    </div>
+
+  </div>
+</section>
+ <section id="team" style="--d:0.6s">
+    <div class="container">
+      <div class="image-box">
+        <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\695286bff9bd42d9cf8c7af2_placeholder 1.svg" alt="What we do">
+      </div>
+      <div class="content-box">
+        <span class="small-title">TEAM</span>
+        <p>
+          Nulla vel sodales tellus, quis condimentum enim. 
+          Nunc porttitor venenatis feugiat. Etiam quis 
+          faucibus erat, non accumsan leo. Aliquam erat 
+          volutpat. Vestibulum ac faucibus eros. Cras 
+          ullamcorper gravida tellus ut consequat.
+        </p>
+        <a href="#" class="btn">LEARN MORE</a>
+      </div>
+
+    </div>
+  </section>
+  <section id="work-section" style="--d:0.8s">
+  <div class="work-container">
+    <div class="work-text">
+      <p class="work-label">WORK</p>
+      <p>
+        Nulla vel sodales tellus, quis condimentum enim. 
+        Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, 
+        non accumsan leo. Aliquam erat volutpat.
+      </p>
+      <p>
+        Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.
+      </p>
+      <button class="btn">LEARN MORE</button>
+    </div>
+    <div class="work-image">
+      <img src="C:\Users\HOME\OneDrive - A.T.E. ENTERPRISES PRIVATE LIMITED\Desktop\695286bff9bd42d9cf8c7af0_placeholder 3 (1).svg" alt="work Image">
+    </div>
+  </div>
+</section>
+  <section id="pqr" style="--d:1s">
+  <div class="pqr-content">
+    <p>
+      Today is the day to build the business of your dreams.
+      Share your mission with the world — and blow your customers away.
+    </p>
+    <br>
+    <br>
+    <p>Contact us: (918) 245-9457<br>
+       1104 E 8th St <br>
+       Sand Springs, Oklahoma(OK), 74063  </p>
+  </div>
+</section>
+</body>
+</html>
